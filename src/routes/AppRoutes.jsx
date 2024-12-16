@@ -11,13 +11,12 @@ import Home8 from "../pages/home/Home8";
 import Home9 from "../pages/home/Home9";
 import Home10 from "../pages/home/Home10";
 import ListV1 from "../pages/List/ListV1";
-import BlogV1 from "../pages/Blog/BlogV1";
-import BlogV2 from "../pages/Blog/BlogV2";
 import ShopPage from "../pages/Shop/ShopPage";
 import FAQsPage from "../pages/Others/FAQsPage";
 import AboutPage from "../pages/About/AboutPage";
 import ContactPage from "../pages/Contact/ContactPage";
 import LoginPage from "../pages/Auth/LoginPage";
+import BlogV1 from "../pages/Blog/BlogV1";
 
 export const Router = createBrowserRouter([
   {
