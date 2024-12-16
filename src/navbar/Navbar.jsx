@@ -1,0 +1,137 @@
+import React from "react";
+import { Select } from "antd";
+import { Link, useNavigate } from "react-router-dom";
+
+const { Option } = Select;
+
+function Navbar() {
+  const navigate = useNavigate();
+
+  // Handle category change
+  const handleCategoryChange = (value) => {
+    navigate(`/${value}`);
+  };
+
+  return (
+    <nav className="bg-white fixed w-full z-10">
+      <div className="container mx-auto px-4 flex items-center justify-between h-16">
+        {/* Logo */}
+        <div className="text-2xl font-bold text-gray-800">
+          <Link to="/">
+            <img
+              className="w-[100px]"
+              src="https://res.cloudinary.com/roastcollective/image/upload/v1/roasters/logos/BOX_2x.png"
+              alt="BoxCars"
+            />
+          </Link>
+        </div>
+
+        {/* Menu Items */}
+        <div className="hidden md:flex space-x-6">
+          {/* Home Select */}
+          <Select
+            onChange={handleCategoryChange}
+            defaultValue="Home"
+            className="w-auto "
+            bordered={false}
+            dropdownStyle={{ zIndex: 1050 }}
+          >
+            <Option value="Home-1">Home</Option>
+            <Option value="Home-1">Home-1</Option>
+            <Option value="Home-2">Home-2</Option>
+            <Option value="Home-3">Home-3</Option>
+            <Option value="Home-4">Home-4</Option>
+            <Option value="Home-5">Home-5</Option>
+            <Option value="Home-6">Home-6</Option>
+            <Option value="Home-7">Home-7</Option>
+            <Option value="Home-8">Home-8</Option>
+            <Option value="Home-9">Home-9</Option>
+            <Option value="Home-10">Home-10</Option>
+          </Select>
+
+          {/* Listings Select */}
+          <Select
+            onChange={handleCategoryChange}
+            defaultValue="Listings"
+            className="w-auto "
+            bordered={false}
+            dropdownStyle={{ zIndex: 1050 }}
+          >
+            <Option value="Listings">Listings</Option>
+            <Option value="Listings1">List v1</Option>
+          </Select>
+
+          {/* Blog Select */}
+          <Select
+            onChange={handleCategoryChange}
+            defaultValue="blog"
+            className="w-auto "
+            bordered={false}
+            dropdownStyle={{ zIndex: 1050 }}
+          >
+            <Option value="blog">Blog</Option>
+            <Option value="blog-v1">Blog v1</Option>
+            <Option value="blog-v2">Blog v2</Option>
+          </Select>
+
+          {/* Pages Select */}
+          <Select
+            onChange={handleCategoryChange}
+            defaultValue="Pages"
+            className="w-auto "
+            bordered={false}
+            dropdownStyle={{ zIndex: 1050 }}
+          >
+            <Option value="Pages">Pages</Option>
+            <Option value="Pages1">Shop Page</Option>
+            <Option value="Pages2">FAQs Page</Option>
+          </Select>
+
+          {/* Buttons */}
+          <Link to="/about">
+            <button className="text-gray-800 hover:text-indigo-500">
+              About
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button className="text-gray-800 hover:text-indigo-500">
+              Contact
+            </button>
+          </Link>
+          <Link to="/signin">
+            <button className="text-gray-800 hover:text-indigo-500">
+              Sign In
+            </button>
+          </Link>
+          <Link to="/submitListing">
+            <button className="bg-white px-4 py-2 rounded-xl border border-black">
+              Submit Listing
+            </button>
+          </Link>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className="md:hidden flex items-center">
+          <button className="text-gray-800 focus:outline-none">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
