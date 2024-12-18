@@ -13,7 +13,7 @@ function Rotlayout() {
 
       {/* Asosiy kontent */}
       <div className="flex-1 bg-white w-full">
-        <main className="container mx-auto px-6 pt-4 pb-8 mt-12">
+        <main className="container mx-auto px-6 pt-4 pb-8">
           <Outlet />
         </main>
       </div>
