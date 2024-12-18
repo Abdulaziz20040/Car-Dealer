@@ -5,12 +5,3 @@
   color: white !important; /* Matn rangini kontrastli qilib qo'ying */
   border-radius: 50% !important;
 }
-
-.hide-scrollbar {
-  overflow-y: auto; /* Scrollni ruxsat berish */
-  scrollbar-width: none; /* Firefox uchun */
-}
-
-.hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome va boshqa WebKit brauzerlari uchun */
-}
