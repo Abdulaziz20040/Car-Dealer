@@ -77,14 +77,15 @@ function Navbar() {
           {/* Pages Select */}
           <Select
             onChange={handleCategoryChange}
-            defaultValue="Pages"
+            defaultValue="pags"
             className="w-auto "
             bordered={false}
             dropdownStyle={{ zIndex: 1050 }}
           >
-            <Option value="Pages">Pages</Option>
-            <Option value="Pages1">Shop Page</Option>
-            <Option value="Pages2">FAQs Page</Option>
+            <Option value="pags">Pages</Option>
+            <Option value="ShopPage">Shop Page</Option>
+            <Option value="faqssPage">FAQs Page</Option>
+            <Option value="loanCalculator">Loan Calculator</Option>
           </Select>
 
           {/* Buttons */}

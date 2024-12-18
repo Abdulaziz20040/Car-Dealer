@@ -18,6 +18,7 @@ import BlogV2 from "../pages/Blog/BlogV2";
 import FAQsPage from "../pages/Others/FAQsPage";
 import AboutPage from "../pages/About/AboutPage";
 import ContactPage from "../pages/Contact/ContactPage";
+import LoanCalculator from "../pages/others/LoanCalculator";
 
 export const Router = createBrowserRouter([
   {
@@ -100,16 +101,20 @@ export const Router = createBrowserRouter([
 
       // Pages
       {
-        path: "Pages",
+        path: "pags",
         element: <ShopPage />,
       },
       {
-        path: "Pages1",
+        path: "ShopPage",
         element: <ShopPage />,
       },
       {
-        path: "Pages2",
+        path: "faqssPage",
         element: <FAQsPage />,
+      },
+      {
+        path: "loanCalculator",
+        element: <LoanCalculator />,
       },
       // others
 
