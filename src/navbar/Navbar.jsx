@@ -86,6 +86,7 @@ function Navbar() {
             <Option value="ShopPage">Shop Page</Option>
             <Option value="faqssPage">FAQs Page</Option>
             <Option value="loanCalculator">Loan Calculator</Option>
+            <Option value="pricingPage">Pricing Page</Option>
           </Select>
 
           {/* Buttons */}

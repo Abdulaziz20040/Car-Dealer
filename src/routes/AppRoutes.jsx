@@ -19,6 +19,7 @@ import FAQsPage from "../pages/Others/FAQsPage";
 import AboutPage from "../pages/About/AboutPage";
 import ContactPage from "../pages/Contact/ContactPage";
 import LoanCalculator from "../pages/others/LoanCalculator";
+import PricingPage from "../pages/pricing/PricingPage";
 
 export const Router = createBrowserRouter([
   {
@@ -115,6 +116,10 @@ export const Router = createBrowserRouter([
       {
         path: "loanCalculator",
         element: <LoanCalculator />,
+      },
+      {
+        path: "pricingPage",
+        element: <PricingPage />,
       },
       // others
 
