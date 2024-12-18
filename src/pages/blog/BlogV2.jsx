@@ -28,7 +28,7 @@ function BlogV2() {
   return (
     <div className="flex flex-col lg:flex-row justify-between mt-10">
       {/* Chap tomoni scrollable */}
-      <div className="w-full lg:w-[65%] h-[72vh] hide-scrollbar bg-white p-4">
+      <div className="w-full lg:w-[65%] h-[82vh] hide-scrollbar bg-white p-4">
         {posts.length > 0 ? (
           posts.map((item, index) => (
             <div key={index} className="py-4 -mt-6 mb-8">

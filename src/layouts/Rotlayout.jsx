@@ -15,13 +15,13 @@ function Rotlayout() {
 
       {/* Asosiy kontent */}
       <div className="flex-1 bg-white w-full">
-        <main className="container mx-auto px-4 md:px-8 pt-6 pb-10">
+        <main className="container mx-auto px-4 md:px-8 pt-6">
           <Outlet />
         </main>
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-200 py-6 border-t mt-2">
+      <footer className="bg-gray-200 py-6 border-t">
         <Footer />
       </footer>
     </div>

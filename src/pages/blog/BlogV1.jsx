@@ -47,8 +47,8 @@ function BlogV1() {
 
             {/* Image */}
             <img
-              src={card.image || "https://via.placeholder.com/300"}
-              alt={card.name || "Product Image"}
+              src={card.img || "https://via.placeholder.com/300"}
+              alt={card.title || "Product Image"}
               className="w-full h-56 object-cover rounded-xl mb-3"
             />
 
@@ -58,12 +58,13 @@ function BlogV1() {
                 <h2 className="text-gray-600 mb-2">
                   {card.author || "Admin"} :
                 </h2>
-                <p className="text-gray-600 mb-2">{card.date || "No date "}</p>
+                <p className="text-gray-600 mb-2">
+                  {card.postDate || "No date "}
+                </p>
               </div>
               {/* Card name */}
-              <h1 className=" max-w-[300px]">
-                {card.name ||
-                  "2024 BMW ALPINA XB7 with exclusive details, extraordinary"}
+              <h1 className=" max-w-[300px] font-semibold">
+                {card.title || "No title"}
               </h1>
             </div>
           </div>

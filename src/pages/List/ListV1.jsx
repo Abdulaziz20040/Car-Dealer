@@ -80,18 +80,18 @@ function ListV1() {
 
             {/* Image */}
             <img
-              src={card.image || "https://via.placeholder.com/300"}
-              alt={card.name || "Product Image"}
+              src={card.img || "https://via.placeholder.com/300"}
+              alt={card.title || "Product Image"}
               className="w-full h-40 object-cover rounded-t-xl mb-4"
             />
 
             {/* Product Info */}
             <div className="px-5 pb-5">
-              <h2 className="text-lg font-semibold mb-1">
-                {card.name || "Product Name"}
+              <h2 className="text-lg font-semibold mb-1 line-clamp-1">
+                {card.title || "Product Name"}
               </h2>
-              <p className="text-gray-600 mb-2">
-                {card.description || "Product Description"}
+              <p className="text-gray-600 mb-2 line-clamp-1">
+                {card.desc || "Product Description"}
               </p>
 
               {/* Horizontal Line */}
