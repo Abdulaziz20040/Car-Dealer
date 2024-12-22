@@ -38,7 +38,7 @@ function ListV1() {
   const currentCards = cards.slice(indexOfFirstCard, indexOfLastCard);
 
   return (
-    <div className="mt-14">
+    <div className="mt-8">
       <h1 className="text-2xl font-semibold">ListV1</h1>
 
       {/* ListV1 cards */}

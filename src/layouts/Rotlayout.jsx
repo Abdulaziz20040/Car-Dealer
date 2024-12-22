@@ -6,7 +6,7 @@ import Breadcrumbs from "./Breadcrumbs";
 
 function Rotlayout() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen">
       {/* Navbar va Breadcrumbs */}
       <header className="bg-white shadow-sm border-b">
         <Navbar />
@@ -21,7 +21,7 @@ function Rotlayout() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-200 py-6 border-t">
+      <footer className="mt-14">
         <Footer />
       </footer>
     </div>

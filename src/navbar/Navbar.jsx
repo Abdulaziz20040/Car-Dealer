@@ -1,6 +1,7 @@
 import React from "react";
 import { Select } from "antd";
 import { Link, useNavigate } from "react-router-dom";
+import { CiUser } from "react-icons/ci";
 
 const { Option } = Select;
 
@@ -101,11 +102,11 @@ function Navbar() {
             </button>
           </Link>
           <Link to="/signin">
-            <button className="text-gray-800 hover:text-indigo-500">
-              Sign In
+            <button className="text-gray-800  flex gap-2 items-center hover:text-indigo-500">
+              <CiUser /> Sign In
             </button>
           </Link>
-          <Link to="/submitListing">
+          <Link to="/Listings1">
             <button className="bg-white px-4 py-2 rounded-xl border border-black">
               Submit Listing
             </button>

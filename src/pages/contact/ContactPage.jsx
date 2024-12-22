@@ -1,10 +1,12 @@
 import React from "react";
+import { AiOutlineVerticalAlignBottom } from "react-icons/ai";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
+import { LuPhoneCall } from "react-icons/lu";
 
 const ContactPage = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-10">
       {/* Top Map Section */}
       <section className="relative w-full h-[400px]">
         <iframe
@@ -96,34 +98,65 @@ const ContactPage = () => {
       </section>
 
       {/* Offices Section */}
-      <section className="bg-gray-100 py-12">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-10 text-gray-700">
+      <section className=" py-12 px-4 max-w-7xl mx-auto">
+        <h1 className="text-2xl font-semibold mb-6">Our Offices</h1>
+        <div className="  grid md:grid-cols-3 gap-10 text-gray-700">
           <div>
             <h3 className="font-bold mb-2">San Francisco</h3>
-            <p className="text-sm">
-              4140 Dewey Blvd, San Francisco, CA 94111, USA
-            </p>
+            <p className="text-sm">4140 Dewey Blvd, San Francisco,</p>
+            <p>CA 94111, USA</p>
             <a href="#" className="text-blue-600 text-sm">
               See on Map ↗
             </a>
+            <div className=" flex gap-3 items-center mt-2">
+              <button className=" flex gap-2 items-center">
+                <button className=" border border-spacing-2 rounded-sm ">
+                  <AiOutlineVerticalAlignBottom />
+                </button>
+                alisan@boxcars.com
+              </button>
+              <button className=" flex gap-2 items-center">
+                <LuPhoneCall />+ 998 77 014 50 47
+              </button>
+            </div>
           </div>
           <div>
             <h3 className="font-bold mb-2">New York</h3>
-            <p className="text-sm">
-              232-240 Wilson Ave, Brooklyn, NY 11237, USA
-            </p>
+            <p className="text-sm">232-240 Wilson Ave, Brooklyn,</p>
+            <p>NY 11237, USA</p>
             <a href="#" className="text-blue-600 text-sm">
               See on Map ↗
             </a>
+            <div className=" flex gap-3 items-center mt-2">
+              <button className=" flex gap-2 items-center">
+                <button className=" border border-spacing-2 rounded-sm ">
+                  <AiOutlineVerticalAlignBottom />
+                </button>
+                alisan@boxcars.com
+              </button>
+              <button className=" flex gap-2 items-center">
+                <LuPhoneCall />+ 998 77 014 50 47
+              </button>
+            </div>
           </div>
           <div>
             <h3 className="font-bold mb-2">London</h3>
-            <p className="text-sm">
-              127-143 Borough High St, London SE1 1NR, UK
-            </p>
+            <p className="text-sm">127-143 Borough High St,</p>
+            <p>London SE1 1NR, UK</p>
             <a href="#" className="text-blue-600 text-sm">
               See on Map ↗
             </a>
+            <div className=" flex gap-3 items-center mt-2">
+              <button className=" flex gap-2 items-center">
+                <button className=" border border-spacing-2 rounded-sm ">
+                  <AiOutlineVerticalAlignBottom />
+                </button>
+                alisan@boxcars.com
+              </button>
+              <button className=" flex gap-2 items-center">
+                <LuPhoneCall />+ 998 77 014 50 47
+              </button>
+            </div>
           </div>
         </div>
       </section>
