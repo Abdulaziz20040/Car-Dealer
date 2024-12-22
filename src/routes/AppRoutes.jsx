@@ -20,6 +20,7 @@ import AboutPage from "../pages/About/AboutPage";
 import ContactPage from "../pages/Contact/ContactPage";
 import LoanCalculator from "../pages/others/LoanCalculator";
 import PricingPage from "../pages/pricing/PricingPage";
+import ServicesPage from "../pages/servici/ServicesPage";
 
 export const Router = createBrowserRouter([
   {
@@ -120,6 +121,10 @@ export const Router = createBrowserRouter([
       {
         path: "pricingPage",
         element: <PricingPage />,
+      },
+      {
+        path: "servicesPage",
+        element: <ServicesPage />,
       },
       // others
 
